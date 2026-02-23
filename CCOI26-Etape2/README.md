@@ -5,3 +5,9 @@ Cette repo est dédié aux Write-ups de la deuxième étape de la CCOI26 (Cyberc
 ## Write-up disponible
 
 - [Who is this guy](https://rafita261.github.io/Write-Up/CCOI26-Etape2/Who-is-this-guy)
+
+- [Follow Format](https://rafita261.github.io/Write-Up/CCOI26-Etape2/Follow-format)
+
+## NB :
+
+Les vrais flags ne seront pas affichés directement dans l'ensemble des Write-Ups.
