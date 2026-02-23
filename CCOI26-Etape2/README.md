@@ -10,7 +10,9 @@ Cette repo est dédié aux Write-ups de la deuxième étape de la CCOI26 (Cyberc
 
 - [CMRS-974 - Ticket 07071730](https://rafita261.github.io/Write-Up/CCOI26-Etape2/CMRS-974-Ticket07071730)
 
-- [Shadow Preview](https://rafita261.github.io/Write-Up/CCOI26-Etape2/shadow-preview))
+- [Shadow Preview](https://rafita261.github.io/Write-Up/CCOI26-Etape2/shadow-preview)
+
+- [Oeil du cyclone](https://rafita261.github.io/Write-Up/CCOI26-Etape2/oeil_cyclone)
 
 ## NB :
 
