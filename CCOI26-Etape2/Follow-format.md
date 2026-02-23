@@ -1,28 +1,31 @@
 # Follow format
 
-Ce challenge a dit qu'ils ont reçu un fichier .img et on devait retouver un fichier supprimé.
+Ce challenge disait qu'ils ont reçu un fichier .img et qu'on devait retrouver un fichier supprimé.
 
 ## Analyse du fichier
 
-Pour être sûr sur le format du fichier (que j'ai pensé en premier), j'ai regardé le type du fichier.
+Pour être sûr du format du fichier (ce que j'ai pensé en premier), j'ai regardé son type.
 
 ```bash
-file challenge.md
+file challenge.img
 ```
 
-Le résultat était `challenge.img: Linux rev 1.0 ext4 filesystem data, UUID=ae6148e4-8e10-49db-a77b-9c52b2529b02, volume name "WORK_DRIVE" (needs journal recovery) (extents) (64bit) (large files) (huge files)`
+Le résultat était :
 
-## Montage et fouillage (fausses pistes)
+challenge.img: Linux rev 1.0 ext4 filesystem data, UUID=ae6148e4-8e10-49db-a77b-9c52b2529b02, volume name "WORK_DRIVE" (needs journal recovery) (extents) (64bit) (large files) (huge files)
 
-J'ai monté le fichier puis fouiller n'importe où. J'ai essayé de trouvé des partitions supprimés mais rien. Il n'y avait que des fichiers vides.
+## Montage et fouilles (fausses pistes)
+
+J'ai monté le fichier puis fouillé un peu partout. J'ai essayé de trouver des partitions supprimées, mais rien. Il n'y avait que des fichiers vides.
 
 ## Titre et déclic
 
-Après, j'ai révu le titre, je pensais directement au format du flag. Et je me suis dit pourquoi pas tenter un simple **strings**, ça ne va prendre qu'une petite seconde et bingo, le flag apparait avec le **flag format** : **CCOI26**.
+Après, j'ai revu le titre. J'ai tout de suite pensé au format du flag. Et je me suis dit : pourquoi ne pas tenter un simple **strings** ? Ça ne prend qu'une seconde. Et bingo, le flag apparaît avec le **flag format** : **CCOI26**.
 
 ```bash
 strings challenge.img | grep CCOI26
 ```
 
-Résultat : `CCOI26{le_vrai_flag_est_ici_pour_le_vrai_fichier}`
+Résultat :
 
+CCOI26{le_vrai_flag_est_ici_pour_le_vrai_fichier}
